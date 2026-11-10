@@ -151,6 +151,8 @@ These are deterministic scores from the human labels in the golden set, not scor
 
 ### Knowledge graph outcome
 
+![Customer Support Knowledge Graph](neo4j-knowledge-graph.png)
+
 The ingested data contains three customers, four unique tickets, and two products. Its relationships and the multi-product customer result are shown below:
 
 ```mermaid
