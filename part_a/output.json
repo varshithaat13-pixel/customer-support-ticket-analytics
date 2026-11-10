@@ -1,0 +1,21 @@
+{
+  "data_quality": {
+    "total_raw": 5,
+    "duplicates_removed": 1,
+    "flagged_issues": [
+      "T4: empty issue field"
+    ],
+    "total_clean": 4
+  },
+  "ticket_counts_by_product": {
+    "CloudSync": {
+      "open": 1,
+      "resolved": 1
+    },
+    "InvoicePro": {
+      "open": 1,
+      "resolved": 1
+    }
+  },
+  "avg_resolution_time_hours": 13.5
+}

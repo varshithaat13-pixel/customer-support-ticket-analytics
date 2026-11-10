@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "id": "T1",
+      "reference": "Customer locked out of CloudSync after resetting their password.",
+      "summary": "User cannot log in to CloudSync.",
+      "facts": {
+        "product": "Is CloudSync named?",
+        "symptom": "Is cannot-log-in / locked-out mentioned?",
+        "trigger": "Is the password-reset trigger mentioned?"
+      },
+      "human": {
+        "product": true,
+        "symptom": true,
+        "trigger": false
+      },
+      "invented": []
+    },
+    {
+      "id": "T2",
+      "reference": "CloudSync sync process hangs near completion.",
+      "summary": "Sync is stuck.",
+      "facts": {
+        "product": "Is CloudSync named?",
+        "process": "Is sync mentioned?",
+        "stage": "Is near-completion mentioned?",
+        "symptom": "Is hangs / stuck mentioned?"
+      },
+      "human": {
+        "product": false,
+        "process": true,
+        "stage": false,
+        "symptom": true
+      },
+      "invented": []
+    },
+    {
+      "id": "T3",
+      "reference": "InvoicePro-generated PDFs are missing invoice line items.",
+      "summary": "PDF export has a missing items bug in InvoicePro.",
+      "facts": {
+        "product": "Is InvoicePro named?",
+        "format": "Is PDF mentioned?",
+        "defect": "Are missing items / line items mentioned?"
+      },
+      "human": {
+        "product": true,
+        "format": true,
+        "defect": true
+      },
+      "invented": ["bug"]
+    }
+  ]
+}
