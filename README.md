@@ -151,21 +151,9 @@ These are deterministic scores from the human labels in the golden set, not scor
 
 ### Knowledge graph outcome
 
-![Customer Support Knowledge Graph](neo4j-knowledge-graph.png)
-
 The ingested data contains three customers, four unique tickets, and two products. Its relationships and the multi-product customer result are shown below:
 
-```mermaid
-flowchart LR
-    Asha["Customer: Asha Rao"] -->|RAISED| T1["Ticket T1"]
-    Asha -->|RAISED| T3["Ticket T3"]
-    Liam["Customer: Liam Chen"] -->|RAISED| T2["Ticket T2"]
-    Priya["Customer: Priya Nair"] -->|RAISED| T4["Ticket T4"]
-    T1 -->|ABOUT| CloudSync["Product: CloudSync"]
-    T2 -->|ABOUT| CloudSync
-    T3 -->|ABOUT| InvoicePro["Product: InvoicePro"]
-    T4 -->|ABOUT| InvoicePro
-```
+![Customer Support Knowledge Graph](neo4j-knowledge-graph.png)
 
 The multi-product query returns:
 
